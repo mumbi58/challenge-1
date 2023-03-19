@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>net salary calculator</title>
+    <!--linking css file to html-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- main html -->
+	<div class="container">
+	<h1>net salary calculator</h1>
+
+	<div class="first">
+		<div class="second">
+		<div class="third">
+			<!-- taking employee details -->
+			<input
+			type="number"
+			class="form-control"
+			placeholder="your full basic salary"
+			id="BASIC"
+            maxlength="10"
+			/>
+		</div>
+		<div class="third">
+			<input
+			type="number"
+			class="form-control"
+			placeholder="total amount of your benefits"
+			id="BENEFITS"
+			/>
+		</div>
+		
+		<div>
+			<input
+			type="button"
+			value="submit details"
+			class="form-button"
+			onclick="calculate()"
+			/>
+		</div>
+		</div>
+	</div>
+	
+
+	<div class="form-group showdata">
+        <p id="data"></p>
+      </div>
+	</div>
+	<!--javascript link-->
+	<script src="js.js"></script>
+</body>
+</html>
